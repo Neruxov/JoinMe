@@ -67,14 +67,4 @@
         </dependency>
     </dependencies>
 
-<!--    <dependencies>-->
-<!--        <dependency>-->
-<!--            <groupId>net.md-5</groupId>-->
-<!--            <artifactId>bungeecord</artifactId>-->
-<!--            <version>1.16-R0.4</version>-->
-<!--            <scope>system</scope>-->
-<!--            <systemPath>${project.basedir}/bungee.jar</systemPath>-->
-<!--        </dependency>-->
-<!--    </dependencies>-->
-
 </project>
