@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 name: JoinMe
 author: Neruxov
 main: me.neruxov.joinme.Main
@@ -13,6 +13,9 @@ commands:
   joinme:
     description: JoinMe command
     usage: /<command>
+  jmreload:
+    description: Reloads JoinMe configuration
+    usage: /<command>
   ij342nj43h23jk4h23jk4h234h23hlasndjkkjsdmjklmnasjfna:
-    description: Connect player to a server
+    description: Connect player to a server (test command)
     usage: /<command>

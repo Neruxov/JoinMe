@@ -1,0 +1,23 @@
+# ------------------------------------
+# |   JoinMe Plugin Configuration    |
+# |   Please use § instead of &      |
+# ------------------------------------
+
+# Placeholders: %player% - player
+
+# Messages & Texts
+
+prefix: "§8[§5JoinMe§8]§r"
+hover_text: "§cJoin now!"
+joinme_expired_message: "§cThat JoinMe has expired."
+no_permission: "§cYou aren't allowed to use this command!"
+player_connect_message: "§7Player %player% §7has joined your server using JoinMe"
+
+# Config
+
+code_expiry_time: 30
+
+# Permissions
+
+reload_config_permission: "joinme.reload"
+joinme_use_permission: "joinme.use"

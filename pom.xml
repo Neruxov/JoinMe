@@ -6,7 +6,7 @@
 
     <groupId>me.neruxov</groupId>
     <artifactId>JoinMe</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -64,6 +64,13 @@
             <version>1.16-R0.5-SNAPSHOT</version>
             <type>javadoc</type>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.md-5</groupId>
+            <artifactId>bungeecord</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/bungee.jar</systemPath>
         </dependency>
     </dependencies>
 
