@@ -56,10 +56,10 @@ public class Main extends Plugin {
     }
 
     public void handleConfig() {
-
-        if (!getDataFolder().exists())
+        if (!getDataFolder().exists()) {
             getDataFolder().mkdir();
-
+        }
+        
         File file = new File(getDataFolder(), "config.yml");
 
 
@@ -67,14 +67,21 @@ public class Main extends Plugin {
             try (InputStream in = getResourceAsStream("config.yml")) {
                 Files.copy(in, file.toPath());
             } catch (IOException e) {
+                System.err.println("Error while copying the default configuration:");
                 e.printStackTrace();
+                // This is a fatal error
+                System.exit(0);
             }
         }
 
         try {
             configuration = ConfigurationProvider.getProvider(YamlConfiguration.class).load(new File(getDataFolder(), "config.yml"));
         } catch (IOException e) {
-            System.err.printf("Can not read the config, please recreate it.");
+            System.err.println("Couldn't read the config, please fix these errors or recreate the file.");
+            // Information why the reading failed, so you don't need to recreate it
+            e.printStackTrace();
+            // We need to exit couse this is a fatal error
+            System.exit(0);
         }
 
     }
